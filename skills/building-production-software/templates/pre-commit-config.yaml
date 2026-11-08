@@ -1,0 +1,19 @@
+# Copy to .pre-commit-config.yaml, then: pip install pre-commit && pre-commit install
+# Refresh the pinned versions with: pre-commit autoupdate
+repos:
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.4
+    hooks:
+      - id: gitleaks              # blocks commits that contain secrets
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.9
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-added-large-files   # keeps dumps and data files out of git
+      - id: check-merge-conflict
+      - id: end-of-file-fixer

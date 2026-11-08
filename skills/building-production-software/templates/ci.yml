@@ -1,0 +1,39 @@
+# GitHub Actions: binding CI for a Python + Postgres service.
+# Copy to .github/workflows/ci.yml, then make the "checks" job a required status check
+# (Settings -> Branches -> Branch protection) so a red run blocks the merge.
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17          # match production's major version
+        env:
+          POSTGRES_USER: ci
+          POSTGRES_PASSWORD: ci     # throwaway CI-only credential
+          POSTGRES_DB: app_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U ci" --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql://ci:ci@localhost:5432/app_test
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0            # full history for secret scanning
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: astral-sh/setup-uv@v5
+      - run: uv sync --frozen       # locked install; fails if uv.lock is stale
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run mypy src
+      - run: uv run python migrate.py --dir migrations   # schema built the same way as production
+      - run: uv run python migrate.py --dir migrations   # second run must be a no-op
+      - run: uv run pytest -q

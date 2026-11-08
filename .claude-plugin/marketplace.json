@@ -1,0 +1,15 @@
+{
+  "name": "daniyal025-skills",
+  "owner": {
+    "name": "Syed Daniyal Ali",
+    "url": "https://github.com/Daniyal025"
+  },
+  "plugins": [
+    {
+      "name": "building-production-software",
+      "source": "./",
+      "description": "Production engineering rules learned the hard way, with tested templates.",
+      "version": "1.0.0"
+    }
+  ]
+}

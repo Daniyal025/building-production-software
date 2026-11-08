@@ -1,0 +1,13 @@
+{
+  "name": "building-production-software",
+  "version": "1.0.0",
+  "description": "Production engineering rules learned the hard way — requirements, database, backend, concurrency, data ingestion, AI/LLM agents, frontend, security, testing, git/CI and deployment — with tested templates.",
+  "author": {
+    "name": "Syed Daniyal Ali",
+    "url": "https://github.com/Daniyal025"
+  },
+  "homepage": "https://github.com/Daniyal025/building-production-software",
+  "repository": "https://github.com/Daniyal025/building-production-software",
+  "license": "MIT",
+  "keywords": ["engineering", "best-practices", "database", "migrations", "llm-agents", "testing", "ci", "security", "deployment"]
+}
