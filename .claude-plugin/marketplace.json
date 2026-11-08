@@ -8,8 +8,8 @@
     {
       "name": "building-production-software",
       "source": "./",
-      "description": "Production engineering rules learned the hard way, with tested templates.",
-      "version": "1.0.0"
+      "description": "Production engineering rules with proportionality tiers, tested templates and blind evals.",
+      "version": "2.0.0"
     }
   ]
 }

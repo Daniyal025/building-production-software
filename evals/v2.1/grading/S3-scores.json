@@ -1,0 +1,12 @@
+{
+  "R01": {"scores": [0.5, 1, 0.5, 1, 1, 1, 0.5, 1, 0.5, 1, 0.5, 1], "note": "Strong on migrations, renames and perf method; no CI-green, no force-with-lease, conflict handling unstated, migration notes lack lock/runtime."},
+  "R02": {"scores": [1, 1, 1, 1, 1, 0.5, 0, 1, 0, 0.5, 0.5, 0.5], "note": "Good integration, CI-green and perf rigor, but no force-with-lease, no owner notice, no diff self-review, no issue link or reviewer focus."},
+  "R03": {"scores": [1, 1, 0.5, 1, 1, 0.5, 1, 0.5, 0.5, 1, 1, 0.5], "note": "Solid git hygiene (rebase --onto, force-with-lease) and migration notes; no CI-green, stacked tests/owners missing, perf lacks variance, no reviewer focus."},
+  "R04": {"scores": [0.5, 1, 0.5, 0.5, 0, 0.5, 0, 0.5, 0.5, 1, 1, 1], "note": "Complete PR template and stack bases, but renames kept with behaviour change, no force-with-lease, no CI or type checks, perf lacks variance."},
+  "R05": {"scores": [0.5, 1, 0.5, 1, 1, 0.5, 1, 0.5, 0.5, 0.5, 1, 1], "note": "Concise and well-covered with force-with-lease and separate rename commit; no CI-green, no owner notice, no issue link, perf lacks variance."},
+  "R06": {"scores": [0.5, 1, 0.5, 0.5, 1, 0.5, 0, 0.5, 0, 1, 1, 0.5], "note": "Covers migration, renames and stack position, but no force-with-lease, no diff self-review, no type checks, and adds irrelevant ceremony."},
+  "R07": {"scores": [1, 1, 1, 1, 1, 1, 1, 0.5, 0.5, 0.5, 1, 1], "note": "Proportionate and near-complete (CI green, --onto with lease, owners told, downgrade tested); perf lacks variance and no issue link."},
+  "R08": {"scores": [1, 1, 1, 1, 1, 0.5, 0, 1, 0.5, 0.5, 0.5, 0.5], "note": "Deep on logic conflicts, migration and perf rigor, but no force-with-lease, no owner notice, no issue link and no explicit risks/reviewer focus."},
+  "R09": {"scores": [0.5, 1, 0.5, 1, 0, 0.5, 0, 0.5, 0, 0.5, 1, 0], "note": "Covers rebase, migration and rename audit but omits separate rename commit, force-with-lease, diff self-review and rollback, with off-scope bullets."},
+  "R10": {"scores": [1, 1, 0.5, 1, 1, 1, 0.5, 1, 0.5, 1, 1, 0.5], "note": "Well-rounded with variance in perf, owners told and rename split; no CI-green, no force-with-lease named, no reviewer focus."}
+}

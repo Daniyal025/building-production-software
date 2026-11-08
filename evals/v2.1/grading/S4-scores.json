@@ -1,0 +1,12 @@
+{
+  "R01": {"scores": [1, 1, 1, 1, 1, 1, 1, 0.5, 0.5, 1, 1, 0.5], "note": "Strong core (dedupe, natural key, guarded update, outbox with key, ack-after-commit) but no out-of-order handling, no graceful shutdown/prefetch, and no reconciliation job."},
+  "R02": {"scores": [1, 1, 1, 1, 1, 1, 1, 0, 0.5, 1, 1, 0.5], "note": "Solid idempotent design and tests, but no schema versioning or out-of-order handling, no visibility timeout, and no reconciliation or retention."},
+  "R03": {"scores": [1, 1, 1, 1, 1, 1, 0.5, 0.5, 0.5, 1, 0.5, 0.5], "note": "Good core and tests, but insufficient stock rolls back to failed/DLQ without a business path, out-of-order only named, no visibility timeout, no correlation logs, no reconciliation."},
+  "R04": {"scores": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "note": "Covers every item including versioned events with out-of-order handling, visibility timeout and shutdown, crash-window tests, reconciliation and retention."},
+  "R05": {"scores": [1, 1, 1, 1, 1, 1, 1, 0.5, 1, 1, 1, 0.5], "note": "Thorough and correct; schema versioning deferred to later and no reconciliation job."},
+  "R06": {"scores": [1, 1, 1, 1, 0.5, 1, 1, 0.5, 0.5, 0.5, 1, 0.5], "note": "Correct data layer and outbox, but no commit-ack crash reasoning or test, its email-failure test wrongly expects message redelivery, no graceful shutdown, no reconciliation."},
+  "R07": {"scores": [1, 1, 1, 0.5, 1, 0.5, 1, 0.5, 0.5, 1, 1, 1], "note": "Good dedupe, out-of-order status checks and reconciliation, but no provider idempotency key, no permanent-vs-transient classification, no schema validation, and no prefetch bound."},
+  "R08": {"scores": [1, 1, 1, 1, 1, 1, 1, 0.5, 0.5, 1, 1, 0.5], "note": "Strong across the core with failure classification and contract test, but no out-of-order handling, no graceful shutdown, and no reconciliation."},
+  "R09": {"scores": [1, 1, 1, 1, 1, 1, 1, 0, 0.5, 1, 1, 0.5], "note": "Correct idempotent design with good tests, but no schema versioning or out-of-order handling, no visibility timeout, and no reconciliation."},
+  "R10": {"scores": [1, 1, 1, 1, 1, 1, 1, 0, 0.5, 1, 1, 0.5], "note": "Correct core with bounded prefetch and good tests, but no schema versioning or out-of-order handling, no visibility timeout or graceful shutdown, and no reconciliation."}
+}

@@ -15,3 +15,4 @@
 | VACUUM FULL / table rewrites | Take exclusive locks; schedule downtime or use online tools (pg_repack). |
 | Compose file secrets without Swarm | Better than env vars, but plain files: permissions and host security still matter. |
 | Copying a legacy tool's quirks | Right when users live in that tool; otherwise can surprise new users. |
+| Applying T2/T3 items to a prototype | Speculative rigour slows learning; apply the tier, list what would move you up. |

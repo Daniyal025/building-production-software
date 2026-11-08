@@ -25,4 +25,4 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install "psycopg[binary]>=3.1" pytest fastapi httpx
-      - run: pytest -q skills/building-production-software/templates/tests
+      - run: pytest -q skills/production-backend-and-data/templates/tests

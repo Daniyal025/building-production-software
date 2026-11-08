@@ -1,7 +1,7 @@
 {
   "name": "building-production-software",
-  "version": "1.0.0",
-  "description": "Production engineering rules learned the hard way — requirements, database, backend, concurrency, data ingestion, AI/LLM agents, frontend, security, testing, git/CI and deployment — with tested templates.",
+  "version": "2.0.0",
+  "description": "Five skills of production engineering rules with proportionality tiers (prototype / production / high-stakes): requirements, database, backend, concurrency, queues, ingestion, performance, API evolution, security, AI/LLM agents, frontend, testing, CI, deployment and incidents \u2014 with tested templates and blind evals.",
   "author": {
     "name": "Syed Daniyal Ali",
     "url": "https://github.com/Daniyal025"
@@ -9,5 +9,19 @@
   "homepage": "https://github.com/Daniyal025/building-production-software",
   "repository": "https://github.com/Daniyal025/building-production-software",
   "license": "MIT",
-  "keywords": ["engineering", "best-practices", "database", "migrations", "llm-agents", "testing", "ci", "security", "deployment"]
+  "keywords": [
+    "engineering",
+    "best-practices",
+    "database",
+    "migrations",
+    "llm-agents",
+    "testing",
+    "ci",
+    "security",
+    "deployment",
+    "queues",
+    "observability",
+    "sre",
+    "proportionality"
+  ]
 }

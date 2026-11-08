@@ -1,0 +1,12 @@
+{
+  "R01": {"scores": [1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0.5, 0.5], "note": "Lean and correct core (cents, remainder rule, greedy settle, one test, tunnel) but no access gate despite tunnel exposure, no data-loss note, no escaping mention, no explicit order of work."},
+  "R02": {"scores": [1, 1, 1, 1, 1, 1, 0, 1, 0.5, 0.5, 0, 0.5], "note": "Good proportional stack and money logic with tunnel/free-host deploy, but explicitly no access control on a public link, no input validation, and triggers only on some skipped items."},
+  "R03": {"scores": [0.5, 0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0], "note": "Vague on stack and storage, uses per-pair netting instead of balance reduction, no deterministic rounding, and pads with lockfiles, secret scanners and versioned schema files."},
+  "R04": {"scores": [1, 0.5, 0.5, 1, 1, 1, 1, 0.5, 1, 0.5, 0.5, 0], "note": "Correct money logic, test and a sensible passphrase gate, but allows Postgres, leaves data model and deploy vague, and pads with lockfiles, secret-scanning hooks and DB constraints."},
+  "R05": {"scores": [1, 1, 1, 1, 1, 1, 1, 1, 1, 0.5, 0.5, 0], "note": "Strong on stack, model, rounding, greedy settle, test, gate-if-public and skip triggers, but no ephemeral-disk risk, no escaping, and runs well past 15 bullets with lockfile/secret padding."},
+  "R06": {"scores": [1, 1, 1, 1, 0.5, 1, 1, 1, 1, 0.5, 0.5, 0], "note": "Solid stack, cents with remainder rule, passphrase and skip triggers, but no explicit who-pays-whom reduction, only a manual backup note, and padded with lockfiles, secret scans and UI-feedback rules."},
+  "R07": {"scores": [1, 1, 1, 1, 1, 1, 0.5, 1, 1, 1, 0, 0.5], "note": "Proportional and correct core with tunnel or volume-backed host plus backup, but access control is just an open shared link and input validation is absent."},
+  "R08": {"scores": [1, 1, 1, 0.5, 1, 1, 1, 1, 0.5, 0.5, 0, 0.5], "note": "Lean plan with secret-token link and volume-backed deploy, but leftover-cent rule is not deterministic, skips lack triggers, and no input validation."},
+  "R09": {"scores": [0.5, 0.5, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0], "note": "Generic process checklist that never names a stack or SQLite, omits remainder handling and greedy settle, and pads with gitleaks hooks, immutable migrations and typed-model validation."},
+  "R10": {"scores": [1, 1, 1, 0.5, 0.5, 1, 0, 1, 0.5, 0, 0, 0.5], "note": "Minimal stack and model with a balance test and tunnel, but no rounding rule, no settle algorithm, explicitly no access control, no backup and no input validation."}
+}

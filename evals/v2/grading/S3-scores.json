@@ -1,0 +1,12 @@
+{
+  "R01": {"scores": [0.5, 1, 1, 1, 1, 0.5, 0.5, 1, 1, 1, 1, 0.5], "note": "Strong on migration, renames, perf method and PR content, but no force-with-lease, vague stack restacking, conflict handling unstated and no reviewer-focus section."},
+  "R02": {"scores": [0.5, 1, 0.5, 1, 1, 0.5, 0.5, 0.5, 1, 0.5, 1, 0.5], "note": "Solid, proportionate checklist with --update-refs/--onto and force-with-lease, but no CI-green step, no owner coordination, no perf statistic, no issue link and risks not named."},
+  "R03": {"scores": [0.5, 1, 1, 1, 1, 1, 0, 1, 0.5, 1, 1, 0.5], "note": "Thorough on migration rehearsal, renames, CI and perf, but silent on force-with-lease, no explicit debug cleanup, no reviewer focus, and heavier than needed."},
+  "R04": {"scores": [1, 1, 1, 1, 1, 0.5, 0, 0.5, 0.5, 0.5, 1, 0.5], "note": "Good rebase, migration and rename handling, but no force-push guidance, owners not told, perf method lacks repeated runs/same-env, no issue link or reviewer focus."},
+  "R05": {"scores": [0.5, 1, 0.5, 0.5, 0, 0.5, 0, 0.5, 0.5, 1, 1, 1], "note": "Good PR template and restack mechanics, but renames are not separated or aliased, no force-push guidance, no lint/type checks, no CI-green step and no perf statistic."},
+  "R06": {"scores": [1, 1, 1, 1, 1, 0.5, 0, 0.5, 0.5, 0.5, 1, 0.5], "note": "Deliberate merge with CI parity and solid migration/rename steps, but no force-push or owner coordination, no diff self-review, no issue link and thin risk/focus section."},
+  "R07": {"scores": [0.5, 1, 0.5, 1, 1, 1, 0.5, 1, 1, 1, 1, 1], "note": "Well-balanced and proportionate, covering restacking with owners, variance-based perf and full PR content; lacks force-with-lease and an explicit CI-green step."},
+  "R08": {"scores": [0.5, 1, 1, 0.5, 1, 0.5, 0, 0.5, 0, 0.5, 0.5, 1], "note": "Good migration and PR-description detail, but no force-push guidance, no type checks or diff cleanup, no perf statistic, and it wrongly advises basing the bottom PR on a branch below it rather than main."},
+  "R09": {"scores": [1, 1, 0.5, 1, 1, 0.5, 1, 0.5, 1, 1, 1, 0.5], "note": "Clear rebase with --onto and force-with-lease plus strong migration and rename checks, but no CI-green step, owners not told, no perf statistic and risks/focus thin."},
+  "R10": {"scores": [1, 1, 1, 1, 1, 1, 1, 0.5, 0.5, 0.5, 1, 1], "note": "Concise and covers nearly everything including downgrade, force-with-lease and owner notice, but perf lacks a statistic, debug cleanup is absent and no issue link."}
+}

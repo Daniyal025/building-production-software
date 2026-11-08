@@ -2,10 +2,19 @@
 
 Use when writing handovers, merge guides, status updates or design docs, answering review comments, asking clients questions, or claiming a bug is fixed.
 
+Tiers: **T1** every project · **T2** production · **T3** high-stakes. Apply items at or below the project's tier.
+
 ## Checklist (read first)
 
-- [ ] Handover: what, order, failure modes, why.
-- [ ] Claims reproduced with scope and frequency; judgement calls labelled; approvals explicit.
+**T1**
+
+- [ ] Claims reproduced on real data with scope and frequency before calling something a bug or a fix.
+- [ ] Explicit approval before anything irreversible (merges, pushes, data changes).
+
+**T2**
+
+- [ ] Handover docs: what, order, failure modes, why — for the reader's role.
+- [ ] Own judgement calls labelled in designs.
 
 ## Rules
 

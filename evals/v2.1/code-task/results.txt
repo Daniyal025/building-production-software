@@ -1,0 +1,3 @@
+skill-1  9 passed in 2.36s 
+skill-2  9 passed in 2.24s 
+skill-3  9 passed in 2.09s 

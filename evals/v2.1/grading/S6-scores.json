@@ -1,0 +1,12 @@
+{
+  "R01": {"scores": [1, 0.5, 1, 1, 1, 1, 0.5, 0.5, 0.5, 1, 0.5, 0.5], "note": "Strong ACL pre-filter, ingestion and permission CI gate, but no ACL-change propagation or bound, no outage behaviour, no owner-written gold set or pass bar, and no cost/latency estimate."},
+  "R02": {"scores": [1, 0.5, 1, 0.5, 0.5, 1, 0.5, 0.5, 0.5, 1, 1, 0.5], "note": "Solid core with a per-team leak gate and feedback into the golden set, but no parse-failure reporting, no exact-term justification for hybrid, no ACL-change bound, and no pass bar or cost estimate."},
+  "R03": {"scores": [1, 0.5, 1, 1, 1, 1, 0.5, 0.5, 1, 1, 1, 0.5], "note": "Thorough and well-gated plan with visible failures and pass thresholds, missing an explicit doc-ACL staleness bound, outage behaviour, who reads logs, and a cost/latency estimate."},
+  "R04": {"scores": [1, 0.5, 1, 0.5, 1, 1, 0.5, 0.5, 1, 1, 1, 0.5], "note": "Hourly ACL re-sync and a concrete pass bar are good, but deletions, parse-failure listing, outage behaviour and a cost estimate are missing."},
+  "R05": {"scores": [0.5, 1, 1, 1, 0.5, 1, 0.5, 1, 0.5, 1, 0.5, 0.5], "note": "Best on revocation bound and cache/log side channels, but no SSO/IdP group resolution, no reranker or top-k, no pass bar, and feedback does not feed the gold set."},
+  "R06": {"scores": [1, 1, 1, 1, 1, 0.5, 0.5, 0.5, 1, 1, 1, 0.5], "note": "Very complete with minutes-level revocation and loud parse failures, but citations lack explicit links, no outage behaviour, log readers unstated, and no cost/latency estimate."},
+  "R07": {"scores": [1, 0.5, 1, 0.5, 1, 1, 0.5, 0, 0.5, 0.5, 1, 0.5], "note": "Clean pre-filter and retrieval, but omits prompt injection and side channels, parse-failure handling, ACL-change bound, and an automated per-change permission gate."},
+  "R08": {"scores": [1, 1, 1, 1, 1, 1, 0.5, 0.5, 0.5, 1, 0.5, 0.5], "note": "Strong ingestion and permission sync with a 15-minute bound and fail-closed groups, but no explicit prompt-injection defence, no pass bar, no content owner, and no cost estimate."},
+  "R09": {"scores": [1, 1, 1, 1, 1, 1, 0.5, 0.5, 1, 1, 1, 0.5], "note": "The most complete plan, but it has no outage behaviour, does not say who reads the logs, gives no cost/latency estimate, and runs somewhat long."},
+  "R10": {"scores": [0.5, 0.5, 1, 0, 0.5, 1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5], "note": "Compact but thin: no SSO groups, no staleness bound, no hash-based refresh or parse-failure handling, no injection defence, and the permission tests are underspecified."}
+}

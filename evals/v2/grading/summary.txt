@@ -1,0 +1,23 @@
+S1 sonnet baseline 10.17 [10.0-10.5] n=3 | skill 10.00 [9.5-10.5] n=3 | delta -0.17
+S1 haiku  baseline  7.00 [6.5-7.5] n=2 | skill  9.00 [8.0-10.0] n=2 | delta +2.00
+S1 all    baseline  8.90 [6.5-10.5] n=5 | skill  9.60 [8.0-10.5] n=5 | delta +0.70
+S2 sonnet baseline  9.50 [8.5-10.0] n=3 | skill 10.50 [10.0-11.0] n=3 | delta +1.00
+S2 haiku  baseline  8.00 [7.5-8.5] n=2 | skill  9.75 [9.5-10.0] n=2 | delta +1.75
+S2 all    baseline  8.90 [7.5-10.0] n=5 | skill 10.20 [9.5-11.0] n=5 | delta +1.30
+S3 sonnet baseline 10.33 [10.0-10.5] n=3 | skill  9.33 [8.5-10.0] n=3 | delta -1.00
+S3 haiku  baseline  7.75 [7.0-8.5] n=2 | skill  7.75 [7.0-8.5] n=2 | delta +0.00
+S3 all    baseline  9.30 [7.0-10.5] n=5 | skill  8.70 [7.0-10.0] n=5 | delta -0.60
+S4 sonnet baseline 10.33 [10.0-10.5] n=3 | skill 10.50 [10.5-10.5] n=3 | delta +0.17
+S4 haiku  baseline  9.75 [9.5-10.0] n=2 | skill  8.00 [8.0-8.0] n=2 | delta -1.75
+S4 all    baseline 10.10 [9.5-10.5] n=5 | skill  9.50 [8.0-10.5] n=5 | delta -0.60
+S5 sonnet baseline  9.17 [8.5-10.0] n=3 | skill  9.33 [8.5-10.0] n=3 | delta +0.17
+S5 haiku  baseline  8.00 [7.0-9.0] n=2 | skill  6.25 [6.0-6.5] n=2 | delta -1.75
+S5 all    baseline  8.70 [7.0-10.0] n=5 | skill  8.10 [6.0-10.0] n=5 | delta -0.60
+ALL sonnet baseline  9.90/12 (82%) n=15 | skill  9.93/12 (83%) n=15
+ALL haiku  baseline  8.10/12 (68%) n=10 | skill  8.15/12 (68%) n=10
+ALL all    baseline  9.18/12 (76%) n=25 | skill  9.22/12 (77%) n=25
+S1 item deltas 1:-0.1 2:+0.2 3:+0.1 4:+0.2 5:-0.1 6:+0.1 7:+0.0 8:+0.0 9:+0.0 10:-0.2 11:+0.3 12:+0.2
+S2 item deltas 1:+0.2 2:+0.0 3:+0.5 4:-0.2 5:+0.0 6:+0.2 7:-0.1 8:+0.5 9:+0.1 10:+0.1 11:+0.0 12:+0.0
+S3 item deltas 1:+0.0 2:+0.0 3:+0.4 4:+0.0 5:+0.2 6:-0.1 7:-0.5 8:+0.1 9:-0.3 10:-0.1 11:-0.1 12:-0.2
+S4 item deltas 1:-0.1 2:-0.1 3:-0.1 4:-0.1 5:+0.1 6:+0.0 7:-0.1 8:+0.0 9:+0.0 10:-0.1 11:-0.1 12:+0.0
+S5 item deltas 1:-0.2 2:-0.3 3:-0.2 4:+0.0 5:-0.2 6:+0.0 7:+0.5 8:-0.3 9:+0.1 10:+0.1 11:+0.4 12:-0.5

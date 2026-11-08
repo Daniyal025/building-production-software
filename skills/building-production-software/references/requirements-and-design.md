@@ -2,15 +2,27 @@
 
 Use when gathering requirements, replacing a spreadsheet or legacy tool, writing a spec, choosing an architecture, deciding what to build.
 
+Tiers: **T1** every project · **T2** production · **T3** high-stakes. Apply items at or below the project's tier.
+
 ## Checklist (read first)
 
-- [ ] Every behaviour of the replaced tool listed and decided; parity test with pinned exceptions.
-- [ ] Acceptance criteria as exact-value examples; visual mockup signed off.
-- [ ] Decision log entry for every client/owner answer; evidence files committed and checked.
-- [ ] Every new module/route/table has a caller in this change.
-- [ ] Second tenant/model on the roadmap? Id column + lookup table + URL namespace now.
-- [ ] Searched for an existing implementation before writing a new one.
-- [ ] Cross-cutting rules enforced in one place and tested across all routes.
+**T1**
+
+- [ ] Acceptance criteria written as exact-value examples before building.
+- [ ] Every new module, route, table or option has a caller in the same change.
+- [ ] Searched the codebase and installed dependencies before writing a new helper.
+
+**T2**
+
+- [ ] Decision log entry (ID, source, date) for every client/owner answer.
+- [ ] Replacing a tool or spreadsheet: every behaviour listed and decided; parity test with pinned exceptions.
+- [ ] Visual work: mockup signed off before styling; real sample turned into tests.
+- [ ] Cross-cutting rules (auth, version checks, audit) enforced in one place and tested across all routes.
+- [ ] Evidence files for decisions committed (or hashed and dated) and checked.
+
+**T3**
+
+- [ ] Second tenant/model on the roadmap: id column + lookup table + URL namespace now.
 
 ## Rules
 

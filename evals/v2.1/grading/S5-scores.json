@@ -1,0 +1,12 @@
+{
+  "R01": {"scores": [1, 1, 1, 1, 1, 1, 0.5, 1, 0.5, 0.5, 0, 0.5], "note": "Solid core (cents, deterministic remainder, greedy settle, one test, tunnel or Fly volume) but access is just a shared link, no input validation, and skip triggers are generic."},
+  "R02": {"scores": [1, 1, 1, 1, 1, 1, 1, 0, 1, 0.5, 0.5, 0.5], "note": "Strong on money correctness, passphrase gate and per-item skip triggers, but never says how or where it is deployed and adds soft-delete/edit marks."},
+  "R03": {"scores": [1, 1, 1, 1, 1, 1, 1, 0, 1, 0.5, 0.5, 0.5], "note": "Well-proportioned with cents, rounding rule, greedy settle, one check, passphrase and triggers, but no deployment step and backup is only a DB copy without naming ephemeral disk."},
+  "R04": {"scores": [1, 1, 1, 1, 1, 1, 0, 1, 0.5, 0.5, 0, 0.5], "note": "Good core logic and simple deploy, but puts it on a public free tier with no access gate and has no input validation."},
+  "R05": {"scores": [1, 1, 1, 0.5, 1, 1, 1, 1, 0.5, 0.5, 0, 0.5], "note": "Secret-link access and Fly volume or tunnel deploy are right, but the remainder rule is vague, no input validation, and triggers are only a generic later list."},
+  "R06": {"scores": [1, 1, 1, 0.5, 0.5, 1, 0, 1, 0.5, 0, 0, 0.5], "note": "Simple and laptop-plus-tunnel, but no rounding rule, no settle algorithm, explicitly no security on a tunnel link, no backup and no validation."},
+  "R07": {"scores": [1, 1, 0.5, 1, 1, 1, 1, 0.5, 0.5, 0.5, 0.5, 0.5], "note": "Precise split rule, validation, greedy settle and passphrase gate, but the data model and deployment are only implied and skips share one blanket trigger."},
+  "R08": {"scores": [1, 1, 1, 0.5, 0.5, 1, 0.5, 0, 0.5, 0, 0.5, 0.5], "note": "Clean model and good validation/test, but no rounding rule or named settle method, no deploy path, no gate beyond keeping the link private, and no backup."},
+  "R09": {"scores": [1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0.5, 0.5], "note": "Tight and correct with per-item triggers and a laptop/tunnel deploy, but exposes it via tunnel with no access gate and ignores data-loss risk."},
+  "R10": {"scores": [1, 1, 1, 1, 1, 1, 1, 0, 1, 0.5, 0.5, 0.5], "note": "Covers money correctness, greedy settle, one check, passphrase and triggers well, but has no deployment step and only a generic backup note."}
+}

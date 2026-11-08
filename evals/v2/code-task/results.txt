@@ -1,0 +1,6 @@
+baseline-1  FAILED test_robust_rejects_float_price FAILED test_robust_rejects_non_finite[bad0] 2 failed, 7 passed in 2.18s 
+baseline-2  FAILED test_robust_rejects_float_price 1 failed, 8 passed in 2.40s 
+baseline-3  FAILED test_robust_rejects_float_price FAILED test_robust_rejects_non_finite[bad0] 2 failed, 7 passed in 2.32s 
+skill-1     9 passed in 2.89s 
+skill-2     9 passed in 2.27s 
+skill-3     9 passed in 2.01s 

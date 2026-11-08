@@ -1,0 +1,23 @@
+# Internal Q&A assistant: plan
+
+- **Scope the first release:** policies, runbooks and product docs for about 50 staff, with answers always tied to a source document. Leave out anything that needs write access or actions.
+- **Permissions are the hard part:** restricted documents must never reach a user outside their team, in answers, snippets, citations or titles. Treat this as a security requirement from day one.
+- **Ingestion source of truth:** pull from each system (wiki API, PDF store, shared drive) on a schedule. Keep each document's ID, version, hash, last-updated date, URL and source ACL (team groups).
+- **Copy the source ACL onto every chunk:** when a source document's permissions change, re-sync its chunks in the same run. A document with no readable ACL is restricted, not public.
+- **Text extraction with visible failures:** store PDFs that are scanned or have no text layer in a failure list with a reason. Never skip them silently, and send them to OCR as a separate step.
+- **Chunk by section, not by fixed size:** keep the heading path, document title and page number with each chunk so answers can cite them.
+- **Re-ingestion is idempotent:** unchanged hashes are skipped, edited documents replace their old chunks, and deleted documents are removed from the index.
+- **Filter by permission inside the search query:** apply the user's team groups as a filter on the vector and keyword search itself. Do not retrieve everything and hide results later, because the model or logs can still leak them.
+- **Fail closed:** if a user's group membership cannot be read, they see only unrestricted documents. Sync group membership from the identity provider with a maximum staleness, such as 15 minutes.
+- **One guarded retrieval path:** every search, including the chat, any export and any admin view, goes through the same function that applies the permission filter.
+- **Hybrid retrieval:** combine keyword search (policy codes, names and product terms match exactly) with embeddings, then rerank. Return a small set of chunks, such as 8 to 12.
+- **Answer only from retrieved passages:** the model must quote or paraphrase the passages it was given. If nothing relevant is found, it says so and offers the closest documents, rather than guessing.
+- **Citations on every answer:** each answer lists document title, section, last-updated date and link. Flag answers based on documents older than a set age, and flag outdated documents to their owners.
+- **Do not reveal restricted documents exist:** a user with no access to a document gets the same "I could not find an answer" response as for a document that does not exist.
+- **Choose the model deliberately:** check that the document content may be sent to the chosen LLM provider under company data terms. Keep prompt and response logs with a retention limit.
+- **Evaluation set first:** collect 150 to 200 real questions from employees and document owners, each with its expected source documents and expected answer points. Write this set before tuning anything.
+- **Measure four things:** retrieval recall at k, answer faithfulness to the cited passages, citation correctness, and refusal behaviour when no answer exists.
+- **Permission tests are required:** for each team, check that restricted chunks never appear for users outside it, using both normal and adversarial questions. Watch these tests fail on a deliberately broken filter before trusting them.
+- **Run the evaluation on every change:** re-run it when chunking, the embedding model, the reranker or the prompt changes, and compare with the last run before merging.
+- **Staged rollout:** a pilot with 5 to 10 people from two teams, one of them a restricted team, for two weeks. Then open to all 50 once the evaluation and permission tests pass and the pilot's failed questions are reviewed.
+- **Operations and feedback:** monitor ingestion failures, index freshness, latency and cost. Add thumbs up/down on each answer, review failed queries weekly, and keep query logs visible only to a small admin group. Skipped: SSO-specific features, analytics dashboards and write actions, add when the pilot shows demand.
