@@ -1,0 +1,12 @@
+{
+  "R01": {"scores": [1, 1, 0.5, 1, 1, 1, 1, 1, 1, 1, 1, 0.5], "note": "Proportionate and complete, including passphrase gate, ephemeral-disk warning and skip triggers; data model left implicit and no order of work."},
+  "R02": {"scores": [1, 1, 1, 1, 1, 1, 0.5, 1, 0.5, 0.5, 0, 0.5], "note": "Solid core with cents, deterministic remainder, greedy settle-up and one test, but no input validation, a bare shared link as access control and only implied disk-loss risk."},
+  "R03": {"scores": [1, 1, 1, 0.5, 1, 1, 1, 1, 0.5, 0.5, 0, 0.5], "note": "Lean plan with a secret-token link and greedy settle-up; remainder rule vague, no input sanity, and skip items mostly lack triggers."},
+  "R04": {"scores": [1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 0.5], "note": "Tight and correct on money, balances, validation and skips with triggers, but no access gate despite tunnel exposure and no data-loss note."},
+  "R05": {"scores": [1, 1, 1, 0.5, 0.5, 1, 0, 1, 0.5, 0, 0, 0.5], "note": "Minimal stack but rounding and the settle-up algorithm are unspecified, security is dismissed, there is no validation, and fixing mistakes by hand in the DB is weak."},
+  "R06": {"scores": [1, 1, 1, 1, 1, 1, 0, 1, 0.5, 0.5, 0, 0.5], "note": "Good money and balance logic with an assert check, but it deploys publicly with no gate, skips input validation and only partly addresses data loss."},
+  "R07": {"scores": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.5, 0.5], "note": "Covers nearly every item proportionately, including passphrase in env, ephemeral disk and skip triggers; validation omits participant checks and there is no order of work."},
+  "R08": {"scores": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.5], "note": "Most complete and concrete answer with exact split, passphrase gate, persistent-disk warning and boundary validation; slightly over the bullet budget with no order of work."},
+  "R09": {"scores": [1, 1, 1, 1, 1, 1, 0, 1, 0.5, 0, 1, 0.5], "note": "Correct money maths and validation, but no access control for tunnel exposure, no data-loss note, and only a generic revisit trigger."},
+  "R10": {"scores": [1, 1, 1, 0.5, 1, 1, 0.5, 1, 1, 0, 1, 0.5], "note": "Sound logic and validation with good skip triggers, but it consciously accepts an ungated link, leaves the remainder rule vague, omits the disk-loss risk and is wordy."}
+}

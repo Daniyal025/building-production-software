@@ -1,0 +1,12 @@
+{
+  "R01": {"scores": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "note": "Complete and proportionate; covers rebase, migration renumber and multi-state test, restack, force-with-lease, reproducible perf re-measure and a full PR description."},
+  "R02": {"scores": [1, 1, 1, 0, 1, 1, 1, 0.5, 0.5, 0.5, 1, 1], "note": "Tight and mostly right, but never searches for renamed-helper call sites, gives a thin perf method, no debug-code self-review and no rename list in the PR."},
+  "R03": {"scores": [0.5, 1, 0.5, 0.5, 1, 1, 0.5, 1, 0.5, 1, 1, 0.5], "note": "Strong migration and perf guidance, but no CI-green check, no force-with-lease, no squash of fixups, and risks/review focus only implied."},
+  "R04": {"scores": [0.5, 1, 1, 0.5, 1, 0.5, 1, 0.5, 1, 1, 1, 0.5], "note": "Thorough but over-ceremonial; rebase method unstated, grep omits main's new callers, stacked branches not re-tested, and perf re-measure not tied to the rebased code."},
+  "R05": {"scores": [0.5, 1, 0.5, 0.5, 0, 0.5, 0, 1, 0.5, 1, 1, 0.5], "note": "Good migration and perf points, but no force-with-lease, no separation of renames from behaviour, no CI-green or owner notification, and leaks irrelevant personal rules into the PR."},
+  "R06": {"scores": [0.5, 1, 0.5, 1, 1, 0.5, 1, 1, 0.5, 0.5, 1, 0.5], "note": "Solid core, but no CI-green check, stacked branches not re-tested or owners told, no fixup squash, no issue link, and risks not named."},
+  "R07": {"scores": [1, 1, 1, 1, 1, 1, 1, 0.5, 1, 1, 1, 1], "note": "Near-complete and proportionate; only the perf re-measure lacks multiple runs and a statistical summary."},
+  "R08": {"scores": [1, 1, 1, 1, 1, 1, 1, 1, 0.5, 0.5, 1, 1], "note": "Concise and correct; self-review lacks debug removal and fixup squashing, and the PR omits an issue link."},
+  "R09": {"scores": [1, 1, 0.5, 1, 1, 0.5, 1, 1, 0.5, 1, 1, 0.5], "note": "Strong on migration, perf method and renames (incl. alias), but no CI-green check, stacked branches not re-tested or owners told, no squash, and reviewer focus/risks thin."},
+  "R10": {"scores": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "note": "Covers every rubric item including median/spread perf measurement, combined-stack testing and clear rollback and review focus."}
+}

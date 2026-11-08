@@ -1,5 +1,21 @@
 # Changelog
 
+## 2.1.0 — 2026-11-09
+
+- **New rule:** "Recipe: a review-ready pull request" in `production-delivery/references/git-and-ci.md`:
+  - bring the branch current and get CI green on the result;
+  - `--force-with-lease` and restack stacked branches, telling their owners;
+  - self-review and squash the diff;
+  - a description with risks, rollback and reviewer focus;
+  - scale the ceremony to the change.
+- **New T1 items:** where the app runs and how to (re)deploy it in one command, with data on storage that survives restarts (kickoff and deploy-and-ops).
+- **Evals (round v2.2):**
+  - the PR-preparation regression is fixed: S3 went from −1.5 to +1.7/12, and S5 from +0.4 to +1.8/12;
+  - two new held-out tasks (S7 hotfix PR, S8 internal tool) showed **no effect** (−0.05/12);
+  - pooled held-out effect: +0.47/12, p = 0.075.
+
+  Reported as measured; see `evals/README.md`.
+
 ## 2.0.0 — 2026-11-09
 
 **Breaking:** the single skill is split into five skills with narrow triggers. `building-production-software` is now the core, alongside `production-backend-and-data`, `production-ai-agents`, `production-frontend` and `production-delivery`. Templates moved to the skills that use them.

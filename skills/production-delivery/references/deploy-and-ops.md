@@ -10,6 +10,7 @@ Tiers: **T1** every project · **T2** production · **T3** high-stakes. Apply it
 
 - [ ] Every documented command actually executed once; scripts stop on the first error.
 - [ ] Backups exist before real data does.
+- [ ] You can say where it runs and how to (re)deploy it in one command; its data lives on storage that survives restarts.
 
 **T2**
 

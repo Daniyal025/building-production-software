@@ -11,11 +11,15 @@ A Claude Code plugin of **production engineering rules with proportionality tier
 
 | Test | Without | With | |
 |---|---|---|---|
-| 6 planning tasks × 5 runs × 2 models, independent blind rubric | 74% | **79%** | +0.63/12, p = 0.008 |
-| Held-out task (internal RAG over restricted docs), never seen during design | 8.3/12 | **9.8/12** | +1.5, p = 0.009 |
 | Code task scored by 9 hidden tests (concurrency, money types, NaN) | 22/27 | **27/27** | every baseline run accepted a float price |
+| 8 planning tasks × 5 runs × 2 models, independent blind rubrics (best estimate) | 74% | **83%** | +1.0/12 on average |
+| Of which: 3 held-out tasks written after the design, never tuned to | 8.7/12 | **9.2/12** | +0.47, p = 0.075: promising, not yet significant |
 
-There is one known regression: advice on preparing a pull request is weaker with the skills (−1.5/12). Full method, every answer, the grades and the limits are in [`evals/`](evals/README.md). An earlier version showed **no** effect under blind grading; that result is published too.
+**Where it helps:** knowledge-heavy work such as ingestion with revisions, permission-aware RAG, AI that writes data, queue consumers, and robust code. It helps the smaller model most.
+
+**Where it doesn't (yet):** general process tasks a strong model already handles, such as a hotfix PR or a small internal tool. There it is neutral, and it can make a strong model's answer longer.
+
+An earlier version showed **no** effect under blind grading, and that result is published too. Full method, every answer, the grades and the limits are in [`evals/`](evals/README.md).
 
 ## What you get
 
@@ -29,14 +33,14 @@ There is one known regression: advice on preparing a pull request is weaker with
 | `production-frontend` | build UI, forms, editable grids, API clients, save states, accessibility, i18n | Request layer, honest feedback, state ownership, a11y, i18n, sanitising HTML |
 | `production-delivery` | write tests, set up CI, open/merge PRs, deploy, set up backups, monitoring, on-call, incidents | Testing, git and CI, deploy and ops, observability and incidents, plus CI and pre-commit templates |
 
-**Proportionality tiers.** Every one of the 141 checklist items is tagged:
+**Proportionality tiers.** Every one of the 145 checklist items is tagged:
 - **T1, every project.** Even a weekend prototype: exact money types, secrets out of git, one self-check, a gate if it's reachable.
 - **T2, production.** Real users or data.
 - **T3, high-stakes.** Money, personal data, several teams, or an AI that changes data.
 
 Claude picks the tier first and applies only the items at or below it.
 
-**Rules with their evidence.** 103 rules. Each has *Why*, then a **Real case** (something that happened in the source project) or a **Source** (a named industry reference), then a concept to look up.
+**Rules with their evidence.** 104 rules. Each has *Why*, then a **Real case** (something that happened in the source project) or a **Source** (a named industry reference), then a concept to look up.
 
 **Tested templates.**
 - A forward-only migration runner with a checksummed ledger.
@@ -46,7 +50,7 @@ Claude picks the tier first and applies only the items at or below it.
 
 The first three are covered by 7 tests, including a two-connection race test that fails if the lock is removed.
 
-**Playbook.** [`docs/Software-and-AI-Engineering-Playbook.docx`](docs/) has the same rules as a study guide: tiers, a day-0 checklist, the eight habits, trade-offs, 103 flashcards and a glossary.
+**Playbook.** [`docs/Software-and-AI-Engineering-Playbook.docx`](docs/) has the same rules as a study guide: tiers, a day-0 checklist, the eight habits, trade-offs, 104 flashcards and a glossary.
 
 ## Install
 

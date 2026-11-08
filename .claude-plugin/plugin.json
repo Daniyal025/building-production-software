@@ -1,7 +1,7 @@
 {
   "name": "building-production-software",
-  "version": "2.0.0",
-  "description": "Five skills of production engineering rules with proportionality tiers (prototype / production / high-stakes): requirements, database, backend, concurrency, queues, ingestion, performance, API evolution, security, AI/LLM agents, frontend, testing, CI, deployment and incidents \u2014 with tested templates and blind evals.",
+  "version": "2.1.0",
+  "description": "Five skills of production engineering rules with proportionality tiers (prototype / production / high-stakes): requirements, database, backend, concurrency, queues, ingestion, performance, API evolution, security, AI/LLM agents, frontend, testing, CI, deployment and incidents — with tested templates and blind evals.",
   "author": {
     "name": "Syed Daniyal Ali",
     "url": "https://github.com/Daniyal025"

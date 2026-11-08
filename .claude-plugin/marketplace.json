@@ -9,7 +9,7 @@
       "name": "building-production-software",
       "source": "./",
       "description": "Production engineering rules with proportionality tiers, tested templates and blind evals.",
-      "version": "2.0.0"
+      "version": "2.1.0"
     }
   ]
 }

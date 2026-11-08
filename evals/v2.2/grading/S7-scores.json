@@ -1,0 +1,12 @@
+{
+  "R01": {"scores": [1, 1, 1, 0.5, 1, 1, 1, 0, 0, 1, 0.5, 1], "note": "Strong technical prep and data handling, but no squash-title guidance, no urgency flag to a reviewer, and no finance/support notice."},
+  "R02": {"scores": [1, 1, 1, 0.5, 1, 0.5, 1, 1, 0, 1, 1, 1], "note": "Complete and proportionate, but never says the code fix leaves stored invoices wrong, no urgency flag, and does not ask whether previously correct currencies change."},
+  "R03": {"scores": [1, 1, 0.5, 0.5, 0.5, 1, 1, 0.5, 0, 0.5, 0.5, 1], "note": "Solid process but thin root-cause analysis (no 0/3-decimal currencies or rounding mode), squash title placed after merge, no monitoring or finance notice."},
+  "R04": {"scores": [1, 1, 0.5, 1, 1, 1, 1, 1, 0.5, 1, 1, 1], "note": "Thorough and proportionate with blast-radius and fast-track ask, missing only float vs Decimal and a billing-aware reviewer."},
+  "R05": {"scores": [1, 1, 0.5, 0.5, 0.5, 1, 0.5, 0.5, 0, 0.5, 0.5, 0], "note": "Leaks irrelevant local rules (no AI attribution, never commit -a, manager merges), lacks rollback and an issue link, and places the squash title after merge."},
+  "R06": {"scores": [1, 1, 0, 0.5, 0.5, 1, 0.5, 1, 0, 0.5, 0.5, 0.5], "note": "Covers basics but no root-cause edge cases, no rollback or ticket link, no urgency flag, and includes leaked attribution/staging ceremony."},
+  "R07": {"scores": [1, 1, 1, 1, 0.5, 1, 0, 1, 0.5, 0.5, 0, 1], "note": "Good technical and squash guidance with a production flag and no self-approval, but no rollback, no ticket link, no monitoring, and no finance follow-up or ticket closure."},
+  "R08": {"scores": [1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1], "note": "Near-complete and proportionate; only misses flagging urgency to a billing-aware reviewer."},
+  "R09": {"scores": [1, 1, 1, 0.5, 0.5, 1, 1, 1, 0, 0.5, 1, 0.5], "note": "Strong root-cause and data-handling coverage, but no urgency flag, no explicit root cause in the PR section, no monitoring, and runs well past 12 bullets with postmortem and alert extras."},
+  "R10": {"scores": [1, 1, 0.5, 1, 1, 1, 1, 1, 0, 1, 1, 0.5], "note": "Very thorough including previously-correct currencies and data handling, but omits rounding mode and an urgency flag, and is over-long with extra follow-ups."}
+}

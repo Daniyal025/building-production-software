@@ -50,7 +50,7 @@ Typical bundles:
 - **AI/LLM changes data:** production-ai-agents + production-backend-and-data (database, backend, security) + production-delivery (testing).
 - **New write endpoint:** production-backend-and-data (backend, database, security) + production-delivery (testing).
 - **Queue consumer or scraper:** production-backend-and-data (events or ingestion, database) + production-delivery (observability).
-- **PR, merge or release:** production-delivery (git-and-ci, testing, deploy-and-ops).
+- **PR, merge or release:** production-delivery (git-and-ci — start with its review-ready PR recipe — testing, deploy-and-ops).
 
 ## Habits that cause most review findings
 

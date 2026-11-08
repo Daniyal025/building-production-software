@@ -8,6 +8,7 @@ Set the tier first. Then set up the items for that tier before the first feature
 - [ ] Secrets in a git-ignored env file, never in code.
 - [ ] Money as integer minor units or Decimal, with a deterministic rounding rule.
 - [ ] One runnable self-check for the non-trivial logic — no suite, no CI.
+- [ ] Where it runs and how: a one-command start or deploy (a simple host or a tunnel), with data on storage that survives restarts — free hosts often wipe local disk.
 - [ ] A gate (shared secret/passphrase) if anyone else can reach it.
 - [ ] If the data matters: a copy of it somewhere else.
 - [ ] A list of what you deliberately skipped and what would make you add it.
